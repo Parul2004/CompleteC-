@@ -1,17 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-    
+int main()
+{
+
     // this is single line comment
 
     /*
     this
-    is 
+    is
     multiple line
     comment.
     */
 
-   cout<<"hello friends\n";
+    int n = 98;
+    cout << "hello friends\n";
+    cout << n << endl;
     return 0;
 }
