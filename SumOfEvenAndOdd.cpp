@@ -7,22 +7,24 @@ int main(){
     cin>>t;
     for (int i = 0; i < t; i++)
     {
-       string str;
-       cin>>str;
-       int even_count = 0,odd_count = 0;
-       for (int i = 0; i < str.length(); i++)
+       int e = 0,o = 0;
+       int n,r;
+       cin>>n;
+       while (n>0)
        {
-        if (str.at(i) % 2 == 0)
-        {
-           even_count+=str.at(i);
-        }
-        else if(str.at(i) % 2 != 0){
-            odd_count+=str.at(i);
-        }
-        
-       }
+          r = n%10;
+          if (r%2 == 0)
+          {
+            e+=r;
+          }
+          else{
+            o+=r;
+          }
 
-       cout<<even_count<<" "<<odd_count<<endl;
+          n = n/10;
+          
+       }
+       cout<<e<<" "<<o<<endl;
        
     }
     
